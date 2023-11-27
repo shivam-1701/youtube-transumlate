@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcription and Summarization</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('static/123.png'); /* Replace 'your-image-url.jpg' with your image URL */
+            background-size: cover;
+            color: #333; /* Adjust text color for better contrast with the background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        input {
+            width: 300px; /* Adjust the width as needed */
+            padding: 8px;
+            font-size: 1em;
+            border-radius: 8px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+            border-radius: 8px;
+            margin-top: 8px; /* Add some space between input and select */
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px; /* Set the border-radius to make corners soft */
+        }
+
+        table {
+            width: 70%; /* Adjust the width as needed */
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>YouTube Transcription and Summarization</h1>
+    <form action="/process" method="post">
+        <table>
+            <!-- Your table content here -->
+        </table>
+        <div>
+            <label for="youtube_link">Enter YouTube Link:</label>
+            <input type="text" id="youtube_link" name="youtube_link" required>
+            <label for="target_language">Select Target Language:</label>
+            <select id="target_language" name="target_language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="zh-CN">Chinese (Simplified)</option>
+                <!-- Add more language options as needed -->
+            </select>
+            <p></p>
+            <button type="submit">Process</button>
+        </div>
+    </form>
+</body>
+
+</html>
